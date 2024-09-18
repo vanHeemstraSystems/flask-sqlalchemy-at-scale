@@ -1,14 +1,16 @@
-اسم المستودع
+flask-sqlalchemy-at-scale
 
-# اسم المستودع
+# قارورة SQLAlchemy على نطاق واسع
 
-استنادا إلى "ABC" في<https://www.abc.com/>
+استنادًا إلى "كيفية إنشاء تطبيق قارورة كبيرة باستخدام مخططات قارورة وFlask-SQLAlchemy" في<https://www.digitalocean.com/community/tutorials/how-to-structure-a-large-flask-application-with-flask-blueprints-and-flask-sqlalchemy>
+
+استنادا إلى "قارورة SQLAlchemy" في<https://github.com/vanHeemstraSystems/flask-sqlalchemy/>
 
 ## 100- مقدمة
 
 يرى[README.md](./100/README.md)
 
-## 200 - Requirements
+## 200 - المتطلبات
 
 يرى[README.md](./200/README.md)
 
