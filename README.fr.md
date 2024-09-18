@@ -1,6 +1,6 @@
 flask-sqlalchemy-à-échelle
 
-# Flask SQLAlchemy at Scale
+# Flask SQLAlchemy à grande échelle
 
 Basé sur « Comment structurer une grande application Flask avec des plans Flask et Flask-SQLAlchemy » sur<https://www.digitalocean.com/community/tutorials/how-to-structure-a-large-flask-application-with-flask-blueprints-and-flask-sqlalchemy>
 
