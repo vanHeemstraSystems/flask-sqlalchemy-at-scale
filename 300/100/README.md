@@ -4,7 +4,7 @@ By the end of the tutorial, you will have built a Flask application with the fol
 
 ```
 .
-└── flask_app
+└── flask-sqlalchemy-at-scale
     ├── app
     │   ├── extensions.py
     │   ├── __init__.py
