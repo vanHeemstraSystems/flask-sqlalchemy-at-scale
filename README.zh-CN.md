@@ -1,8 +1,10 @@
-存储库名称
+flask-sqlalchemy-at-scale
 
-# 存储库名称
+# 大规模 Flask SQLAlchemy
 
-基于“ABC”<https://www.abc.com/>
+Based on "How To Structure a Large Flask Application with Flask Blueprints and Flask-SQLAlchemy" at <https://www.digitalocean.com/community/tutorials/how-to-structure-a-large-flask-application-with-flask-blueprints-and-flask-sqlalchemy>
+
+基于“Flask SQLAlchemy”，位于<https://github.com/vanHeemstraSystems/flask-sqlalchemy/>
 
 ## 100 - 简介
 
