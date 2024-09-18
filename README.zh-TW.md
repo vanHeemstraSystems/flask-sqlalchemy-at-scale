@@ -1,6 +1,6 @@
 規模燒瓶 sqlalchemy
 
-# 大規模 Flask SQLAlchemy
+# Flask SQLAlchemy at Scale
 
 基於“如何使用 Flask 藍圖和 Flask-SQLAlchemy 建立大型 Flask 應用程式”，位於<https://www.digitalocean.com/community/tutorials/how-to-structure-a-large-flask-application-with-flask-blueprints-and-flask-sqlalchemy>
 
