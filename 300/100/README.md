@@ -5,31 +5,32 @@ By the end of the tutorial, you will have built a Flask application with the fol
 ```
 .
 └── flask-sqlalchemy-at-scale
-    ├── app
-    │   ├── extensions.py
-    │   ├── __init__.py
-    │   ├── main
-    │   │   ├── __init__.py
-    │   │   └── routes.py
-    │   ├── models
-    │   │   ├── post.py
-    │   │   └── question.py
-    │   ├── posts
-    │   │   ├── __init__.py
-    │   │   └── routes.py
-    │   ├── questions
-    │   │   ├── __init__.py
-    │   │   └── routes.py
-    │   └── templates
-    │       ├── base.html
-    │       ├── index.html
-    │       ├── posts
-    │       │   ├── categories.html
-    │       │   └── index.html
-    │       └── questions
-    │           └── index.html
-    ├── app.db
-    └── config.py
+    └── app
+        ├── extensions.py
+        ├── __init__.py
+        ├── main
+        │   ├── __init__.py
+        │   └── routes.py
+        ├── models
+        │   ├── post.py
+        │   └── question.py
+        ├── posts
+        │   ├── __init__.py
+        │   └── routes.py
+        ├── questions
+        │   ├── __init__.py
+        │   └── routes.py
+        ├── templates
+        │       ├── base.html
+        │       ├── index.html
+        │       ├── posts
+        │       │   ├── categories.html
+        │       │   └── index.html
+        │       └── questions
+        │           └── index.html
+        ├── instance
+        │       └── app.db
+        └── config.py
 ```
 
 Inside your ```flask_app``` directory, you’ll have an ```app.db``` database file and a ```config.py``` configuration file for your Flask application. The main Flask application will be in the ```app``` directory, which will have an ```__init__.py``` special file to make it a package for imports to work properly, and it will contain a function for creating the Flask application instance.
