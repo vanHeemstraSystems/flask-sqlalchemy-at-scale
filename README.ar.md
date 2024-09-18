@@ -1,4 +1,4 @@
-flask-sqlalchemy-at-scale
+قارورة sqlalchemy على نطاق واسع
 
 # قارورة SQLAlchemy على نطاق واسع
 
