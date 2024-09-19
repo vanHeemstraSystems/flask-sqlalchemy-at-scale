@@ -14,7 +14,7 @@ Exécutez cette application comme suit :
 
 ## 100 - Introduction
 
-Voir[README.md](./100/README.md)
+See [README.md](./100/README.md)
 
 ## 200 - Exigences
 
