@@ -46,5 +46,9 @@ Save and close the file.
 
 In this file, you import the ```Flask``` class from the ```flask``` package. Then you import the ```Config``` configuration class from the ```config.py``` file you created outside the ```app``` directory, in the root directory, in the previous step.
 
+The ```create_app()``` function is the [Flask application factory function](https://flask.palletsprojects.com/en/2.2.x/patterns/appfactories/). It creates an application instance called ```app``` from the ```Flask()``` class using the familiar ```app = Flask(__name__)``` line. You configure the application by importing configuration values from an object using the ```app.config.from_object()``` method, passing it the value of the ```config_class``` parameter, which holds the ```Config``` class as a default value. You will initialize your Flask extensions below the ```# Initialize Flask extensions here``` comment and register your application blueprints below the ```# Register blueprints here``` comment once you create them.
+
+
+
 
 MORE
