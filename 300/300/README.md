@@ -2,7 +2,7 @@
 
 In this step, you’ll create a configuration file for your Flask application, separating your application settings from the rest of the application and making changing settings easier. The configuration file will configure things such as [the secret key](https://flask.palletsprojects.com/en/2.2.x/api/#sessions), the [SQLAlchemy database URI](https://www.digitalocean.com/community/tutorials/how-to-use-flask-sqlalchemy-to-interact-with-databases-in-a-flask-application#step-2-setting-up-the-database-and-model), and so on.
 
-In your ```app``` directory, open a new file called ```config.py```. This file will hold your Flask application’s configuration:
+In your ```flask_app``` directory, open a new file called ```config.py```. This file will hold your Flask application’s configuration:
 
 ```python title="config.py"
 #!/usr/bin/env python
@@ -14,7 +14,7 @@ class Config:
         or 'sqlite:///app.db'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 ```
-app/config.py
+flask_app/config.py
 
 Save and close the file.
 
@@ -31,13 +31,13 @@ You use a class called ```Config``` and set configuration values using class var
 **Note**: You will not set a secret key in this tutorial because you will not use functionality that needs a secret key. However, if you need to set a secret key, you can set it as follows (for Windows, use ```set``` instead of ```export```):
 
 ```
-(.venv) gitpod /workspace/flask-sqlalchemy-at-scale/app (main) $ export SECRET_KEY=" your secret key "
+(.venv) gitpod /workspace/flask-sqlalchemy-at-scale/flask_app (main) $ export SECRET_KEY=" your secret key "
 ```
 
 Similarly, you can set a database URI like so (use set on Windows):
 
 ```
-(.venv) gitpod /workspace/flask-sqlalchemy-at-scale/app (main) $ export DATABASE_URI="postgresql:// username : password @ host : port / database_name "
+(.venv) gitpod /workspace/flask-sqlalchemy-at-scale/flask_app (main) $ export DATABASE_URI="postgresql:// username : password @ host : port / database_name "
 ```
 
 You have now set up a configuration file for your application. Next, you’ll set up a Flask application instance and create a few blueprints that represent different components of your Flask application.
