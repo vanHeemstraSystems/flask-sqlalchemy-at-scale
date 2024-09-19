@@ -1,4 +1,4 @@
-flask-sqlalchemy-at-scale
+规模烧瓶 sqlalchemy
 
 # 大规模 Flask SQLAlchemy
 
@@ -20,4 +20,4 @@ flask-sqlalchemy-at-scale
 
 ## 400 - 结论
 
-看[README.md](./400/README.md)
+See [README.md](./400/README.md)
