@@ -18,5 +18,12 @@ Next, open a new ```__init__.py``` main file inside the new main directory:
 
 This is where you’ll create your main blueprint. Add the following code to this file:
 
+```
+#!/usr/bin/env python
+from flask import Blueprint
+
+bp = Blueprint('main', __name__)
+```
+flask_app/app/main/__init__.py
 
 MORE
