@@ -1,14 +1,14 @@
 फ्लास्क-एसक्यूएलकेमी-एट-स्केल
 
-# स्केल पर फ्लास्क SQLAlchemy
+# Flask SQLAlchemy at Scale
 
 "फ्लास्क ब्लूप्रिंट और फ्लास्क-SQLAlchemy के साथ एक बड़े फ्लास्क अनुप्रयोग की संरचना कैसे करें" पर आधारित<https://www.digitalocean.com/community/tutorials/how-to-structure-a-large-flask-application-with-flask-blueprints-and-flask-sqlalchemy>
 
-"फ्लास्क SQLAlchemy" पर आधारित<https://github.com/vanHeemstraSystems/flask-sqlalchemy/>
+Based on "Flask SQLAlchemy" at <https://github.com/vanHeemstraSystems/flask-sqlalchemy/>
 
-Run this application as follows:
+इस एप्लिकेशन को इस प्रकार चलाएँ:
 
-1) दर्ज करें`flask_app`निर्देशिका:`$ cd flask_app`2) यदि अस्तित्व में नहीं है, तो अंदर एक आभासी वातावरण बनाएं`flask_app` directory: `python3 -m venv .venv
+1) दर्ज करें`flask_app`निर्देशिका:`$ cd flask_app`2) यदि अस्तित्व में नहीं है, तो अंदर एक आभासी वातावरण बनाएं`flask_app`निर्देशिका:`python3 -m venv .venv
 3) Start the virtual environment and enter: `. .venv/bin/सक्रिय करें`4) Set the Flask App to app directory:`(.venv) $ निर्यात FLASK_APP=ऐप`5) Set the Flask Environment to development:`(.venv) $ निर्यात FLASK_ENV=विकास`6) Run the flask app:`(.venv) $ फ्लास्क रन\`\`\`
 7) संकेतानुसार वेब इंटरफ़ेस खोलें
 
@@ -22,7 +22,7 @@ Run this application as follows:
 
 ## 300 - हमारे एप्लिकेशन का निर्माण
 
-See [README.md](./300/README.md)
+देखना[README.md](./300/README.md)
 
 ## 400 - निष्कर्ष
 
