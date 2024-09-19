@@ -1,16 +1,16 @@
 flask-sqlalchemy-à-échelle
 
-# Flask SQLAlchemy à grande échelle
+# Flask SQLAlchemy at Scale
 
 Basé sur « Comment structurer une grande application Flask avec des plans Flask et Flask-SQLAlchemy » sur<https://www.digitalocean.com/community/tutorials/how-to-structure-a-large-flask-application-with-flask-blueprints-and-flask-sqlalchemy>
 
-Based on "Flask SQLAlchemy" at <https://github.com/vanHeemstraSystems/flask-sqlalchemy/>
+Basé sur "Flask SQLAlchemy" sur<https://github.com/vanHeemstraSystems/flask-sqlalchemy/>
 
 ## 100 - Introduction
 
 Voir[README.md](./100/README.md)
 
-## 200 - Exigences
+## 200 - Requirements
 
 Voir[README.md](./200/README.md)
 

@@ -6,7 +6,7 @@
 
 基於“Flask SQLAlchemy”，位於<https://github.com/vanHeemstraSystems/flask-sqlalchemy/>
 
-## 100 - Introduction
+## 100 - 簡介
 
 看[README.md](./100/README.md)
 
