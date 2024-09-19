@@ -9,9 +9,8 @@ At this point in the tutorial, your ```app``` directory structure is as follows 
 ```
 .
 ├── app
-   ├── config.py
-   |
-   └── requirements.txt
+|   └── requirements.txt
+└── config.py
 ```
 
 Your application’s core code will live inside a project directory, which will be a Python package. In this tutorial, we’ll call it ```app```, but you can use your project’s name or another common directory name such as ```src```, ```core```, or something similar.
@@ -45,7 +44,7 @@ app/__init__.py
 
 Save and close the file.
 
-
+In this file, you import the ```Flask``` class from the ```flask``` package. Then you import the ```Config``` configuration class from the ```config.py``` file you created outside the ```app``` directory, in the root directory, in the previous step.
 
 
 MORE
