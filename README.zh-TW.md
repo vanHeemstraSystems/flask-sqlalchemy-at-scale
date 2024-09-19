@@ -8,8 +8,8 @@
 
 按如下方式運行該應用程式：
 
-1) 輸入`flask_app`目錄：`$ cd flask_app`2）如果不存在，則在內部建立一個虛擬環境`flask_app`目錄：`python3 -m venv .venv
-3) Start the virtual environment and enter: `。 .venv/bin/激活`4) Set the Flask App to app directory:`(.venv) $ 導出 FLASK_APP=app`5) Set the Flask Environment to development:`(.venv) $ 導出 FLASK_ENV=開發`6) Run the flask app:`(.venv) $ 燒瓶運轉\`\`\`
+1) 輸入`flask_app` directory: `$ cd flask_app`2）如果不存在，則在內部建立一個虛擬環境`flask_app`目錄：`python3 -m venv .venv
+3) Start the virtual environment and enter: `。 .venv/bin/激活`4) Set the Flask App to app directory:`(.venv) $ export FLASK_APP=app`5) Set the Flask Environment to development:`(.venv) $ 導出 FLASK_ENV=開發`6) Run the flask app:`(.venv) $ 燒瓶運轉\`\`\`
 7）根據提示開啟Web介面
 
 ## 100 - 簡介
@@ -20,7 +20,7 @@
 
 看[README.md](./200/README.md)
 
-## 300 - 建立我們的應用程式
+## 300 - Building Our Application
 
 看[README.md](./300/README.md)
 
