@@ -16,21 +16,21 @@ Python comes bundled with the **[venv](https://docs.python.org/3/library/venv.ht
 
 ### Create an environment
 
-Create a project folder (here: ```app```) and a ```.venv``` folder within:
+Create a project folder (here: ```flask_app```) and a ```.venv``` folder within:
 
 macOS/Linux:
 
 ```
-$ mkdir app
-$ cd app
+$ mkdir flask_app
+$ cd flask_app
 $ python3 -m venv .venv
 ```
 
 Windows:
 
 ```
-> mkdir app
-> cd app
+> mkdir flask_app
+> cd flask_app
 > py -3 -m venv .venv
 ```
 
@@ -41,14 +41,14 @@ Before you work on your project, activate the corresponding environment:
 macOS/Linux:
 
 ```
-$ cd app
+$ cd flask_app
 $ . .venv/bin/activate
 ```
 
 Windows:
 
 ```
-> cd app
+> cd flask_app
 > .venv\Scripts\activate
 ```
 
@@ -70,7 +70,7 @@ Alternatively, add ```Flask``` and ```Flask-SQLAlchemy``` to a requirements.txt 
 Flask
 Flask-SQLAlchemy
 ```
-app/requirements.txt
+flask_app/requirements.txt
 
 And install it like:
 
