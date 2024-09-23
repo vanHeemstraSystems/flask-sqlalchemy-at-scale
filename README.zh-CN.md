@@ -1,6 +1,6 @@
 规模烧瓶 sqlalchemy
 
-# 大规模 Flask SQLAlchemy
+# Flask SQLAlchemy at Scale
 
 基于“如何使用 Flask 蓝图和 Flask-SQLAlchemy 构建大型 Flask 应用程序”，位于<https://www.digitalocean.com/community/tutorials/how-to-structure-a-large-flask-application-with-flask-blueprints-and-flask-sqlalchemy>
 
@@ -12,13 +12,13 @@
 3) Start the virtual environment and enter: `。 .venv/bin/激活`4) Set the Flask App to app directory:`(.venv) $ 导出 FLASK_APP=app`5) Set the Flask Environment to development:`(.venv) $ 导出 FLASK_ENV=开发`6) Run the flask app:`(.venv) $ 烧瓶运行\`\`\`
 7）根据提示打开Web界面
 
-## 100 - Introduction
+## 100 - 简介
 
 看[README.md](./100/README.md)
 
 ## 200 - 要求
 
-看[README.md](./200/README.md)
+See [README.md](./200/README.md)
 
 ## 300 - 构建我们的应用程序
 
