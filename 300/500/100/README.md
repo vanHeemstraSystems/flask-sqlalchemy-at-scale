@@ -79,6 +79,34 @@ With this addition, registering a blueprint will also register its routes.
 
 Now that you’ve created a blueprint and added a route, you’ll need to tell Flask about this new blueprint so that it can be treated as part of your Flask application. To do this, you’ll register the blueprint inside your Flask application factory function.
 
-Open the app/__init__.py file to edit your factory function:
+Open the flask_app/app/__init__.py file to edit your factory function:
+
+```
+(.venv) gitpod /workspace/flask-sqlalchemy-at-scale/flask_app (main) $ nano app/__init__.py
+```
+
+Edit the ```create_app()``` factory function to match the following block, adding the highlighted lines:
+
+```python title="__init__.py"
+...
+def create_app(config_class=Config):
+    app = Flask(__name__)
+    app.config.from_object(config_class)
+
+    # Initialize Flask extensions here
+
+    # Register blueprints here
+    from app.main import bp as main_bp
+    app.register_blueprint(main_bp)
+
+    @app.route('/test/')
+    def test_page():
+        return '<h1>Testing the Flask Application Factory Pattern</h1>'
+
+    return app
+```
+flask_app/app/__init__.py
+
+Save and close the file.
 
 MORE
