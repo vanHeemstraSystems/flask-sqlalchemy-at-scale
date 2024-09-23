@@ -4,13 +4,13 @@
 
 基于“如何使用 Flask 蓝图和 Flask-SQLAlchemy 构建大型 Flask 应用程序”，位于<https://www.digitalocean.com/community/tutorials/how-to-structure-a-large-flask-application-with-flask-blueprints-and-flask-sqlalchemy>
 
-Based on "Flask SQLAlchemy" at <https://github.com/vanHeemstraSystems/flask-sqlalchemy/>
+基于“Flask SQLAlchemy”，位于<https://github.com/vanHeemstraSystems/flask-sqlalchemy/>
 
 基于“工厂模式”<https://github.com/vanHeemstraSystems/factory-pattern>
 
 按如下方式运行该应用程序：
 
-1) 输入`flask_app`目录：`$ cd flask_app`2）运行`pip install -r requirements.txt`3）如果不存在，则在内部创建一个虚拟环境`flask_app`目录：`python3 -m venv .venv
+1) 输入`flask_app`目录：`$ cd flask_app`2) 跑步`pip install -r requirements.txt`3）如果不存在，则在其中创建一个虚拟环境`flask_app`目录：`python3 -m venv .venv
 4) Start the virtual environment and enter: `。 .venv/bin/激活`5) Set the Flask App to app directory:`(.venv) $ 导出 FLASK_APP=app`6) Set the Flask Environment to development:`(.venv) $ 导出 FLASK_ENV=开发`7) Run the flask app:`(.venv) $ 烧瓶运行\`\`\`
 8）根据提示打开Web界面
 
