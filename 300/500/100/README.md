@@ -119,6 +119,149 @@ http://127.0.0.1:5000
 
 The page will load with the text **This is The Main Blueprint**, which is the text you returned in the main route.
 
+You now have a blueprint with a route in your application. Next, you will edit the main route in the main blueprint to render an HTML template, which will demonstrate how to render templates when working with Flask blueprints.
 
+Open the ```routes.py``` file of the main blueprint for modification:
 
-MORE
+```
+(.venv) gitpod /workspace/flask-sqlalchemy-at-scale/flask_app (main) $ nano app/main/routes.py
+```
+
+Edit the file as follows:
+
+```python title="routes.py"
+#!/usr/bin/env python
+from flask import render_template
+from app.main import bp
+
+@bp.route('/')
+def index():
+    return render_template('index.html')
+```
+flask_app/app/main/routes.py
+
+Save and close the file.
+
+Here, you import the ```render_template()``` function and use it in the route to render a template file called ```index.html```.
+
+You’ll now have to create a templates directory and base template that all other templates will share to avoid code repetition.
+
+Create a templates directory inside your ```app``` directory:
+
+```
+(.venv) gitpod /workspace/flask-sqlalchemy-at-scale/flask_app (main) $ mkdir app/templates
+```
+
+Open a new file called ```base.html``` to act as the base template:
+
+```
+(.venv) gitpod /workspace/flask-sqlalchemy-at-scale/flask_app (main) $ nano app/templates/base.html
+```
+
+Add the following code to the new file:
+
+```html title="base.html"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} {% endblock %} - FlaskApp</title>
+    <style>
+        h2 {
+            width: 100%;
+        }
+
+        .title {
+            margin: 5px;
+            width: 100%;
+        }
+
+        .content {
+            margin: 5px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .post {
+            flex: 20%;
+            padding: 10px;
+            margin: 5px;
+            background-color: #f3f3f3;
+            inline-size: 100%;
+        }
+
+        .title a {
+            color: #00a36f;
+            text-decoration: none;
+        }
+
+        nav a {
+            color: #d64161;
+            font-size: 3em;
+            margin-left: 50px;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="{{ url_for('main.index') }}">FlaskApp</a>
+        <a href="#">Posts</a>
+        <a href="#">Categories</a>
+        <a href="#">Questions</a>
+    </nav>
+    <hr>
+    <div class="content">
+        {% block content %} {% endblock %}
+    </div>
+</body>
+</html>
+```
+flask_app/app/templates/base.html
+
+Save and close the file.
+
+This base template features HTML boilerplate that you will reuse in your other templates.
+
+The base template has a title block, some CSS, a navigation bar to link to different parts of your application, and a content block. For more on base templates, see [How To Use Templates in a Flask Application](https://www.digitalocean.com/community/tutorials/how-to-use-templates-in-a-flask-application).
+
+You use the syntax ```blueprint_name.view_function_name``` to link to a route when using the ```url_for()``` function with blueprints. The index page is handled by the ```index()``` view function in the main blueprint; therefore, you pass ```main.index``` to the ```url_for()``` function to build a link.
+
+Now, create the ```index.html``` file you rendered in the ```index()``` view function of the main blueprint:
+
+```
+(.venv) gitpod /workspace/flask-sqlalchemy-at-scale/flask_app (main) $ nano app/templates/index.html
+```
+
+Add the following code to the newly created file:
+
+```html title="index.html"
+{% extends 'base.html' %}
+
+{% block content %}
+    <span class="title"><h1>{% block title %} The Home Page of FlaskApp {% endblock %}</h1></span>
+    <div class="content">
+        <h2>This is the main Flask blueprint</h2>
+    </div>
+{% endblock %}
+```
+flask_app/app/templates/index.html
+
+Save and close the file.
+
+Here, you extend the base template. You replace the content block, using an ```<h1>``` heading that also serves as a title and an ```<h2>``` heading to indicate the index page is part of the main Flask blueprint.
+
+With the development server running, visit the index page using your browser or refresh it if it’s already open:
+
+```
+http://127.0.0.1:5000/
+```
+
+A page similar to the following image will load:
+
+![image](https://github.com/user-attachments/assets/1812ce0e-ef50-4a8b-9f62-7169747de30a)
+
+You have now set up a blueprint, added a route to its ```routes.py``` file, registered it on the application, and rendered templates for it. Next, you’ll create another blueprint for blog posts.
