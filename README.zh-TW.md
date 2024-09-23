@@ -1,4 +1,4 @@
-規模燒瓶 sqlalchemy
+flask-sqlalchemy-at-scale
 
 # 大規模 Flask SQLAlchemy
 
