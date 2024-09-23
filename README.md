@@ -5,6 +5,8 @@ Based on "How To Structure a Large Flask Application with Flask Blueprints and F
 
 Based on "Flask SQLAlchemy" at https://github.com/vanHeemstraSystems/flask-sqlalchemy/
 
+Based on "Factory Pattern" at https://github.com/vanHeemstraSystems/factory-pattern
+
 Run this application as follows:
 
 1) Enter ```flask_app``` directory: ```$ cd flask_app```
