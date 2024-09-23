@@ -52,5 +52,29 @@ flask_app/app/main/routes.py
 
 Save and close the file.
 
+Here, you import the ```bp``` blueprint object from the main blueprint, which you access through ```app.main```. In the import line, ```app``` is the project’s package, ```main``` is the main blueprint package, and ```bp``` is the object you declared in the main blueprint’s ```__init__.py``` file.
+
+You use the ```bp``` object to create a ```/``` route and an ```index()``` view function with the ```bp.route()``` decorator, similar to the familiar ```app.route()``` decorator.
+
+For Flask to use these routes and to make them importable directly from the blueprint, you’ll need to import this ```routes.py``` file in your blueprint’s ```__init__.py``` file. Open it for editing:
+
+```
+(.venv) gitpod /workspace/flask-sqlalchemy-at-scale/flask_app (main) $ nano app/main/__init__.py
+```
+
+Add the highlighted import line at the end of the file:
+
+```python title="__init__.py"
+from flask import Blueprint
+
+bp = Blueprint('main', __name__)
+
+from app.main import routes
+```
+app/main/__init__.py
+
+Save and close the file.
+
+
 
 MORE
