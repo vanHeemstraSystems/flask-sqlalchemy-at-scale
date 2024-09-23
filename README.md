@@ -17,6 +17,10 @@ Run this application as follows:
 6) Set the Flask Environment to development: ```(.venv) $ export FLASK_ENV=development```
 7) Run the flask app: ```(.venv) $ flask run```
 8) Open the web interface as prompted
+9) Use ```CTRL+c``` to exit the web server.
+10) Alternatively run the flask command line interface: ```(.venv) $ flask shell```
+11) Execute any flask commands: >>>
+12) Use ```exit()``` to exit from the command line interface.
 
 ## 100 - Introduction
 
