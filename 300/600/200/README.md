@@ -239,4 +239,8 @@ http://127.0.0.1:5000/posts/
 
 The sample posts you’ve generated will be displayed on the index page, similar to the following image:
 
+== IMAGE GOES HERE ==
+
+You now have a database model for posts. You can now add features to your application with new routes and templates, such as creating, editing, and deleting posts.
+
 MORE
