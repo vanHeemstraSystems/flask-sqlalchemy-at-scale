@@ -71,10 +71,14 @@ bp = Blueprint('main', __name__)
 
 from app.main import routes
 ```
-app/main/__init__.py
+flask_app/app/main/__init__.py
 
 Save and close the file.
 
+With this addition, registering a blueprint will also register its routes.
 
+Now that you’ve created a blueprint and added a route, you’ll need to tell Flask about this new blueprint so that it can be treated as part of your Flask application. To do this, you’ll register the blueprint inside your Flask application factory function.
+
+Open the app/__init__.py file to edit your factory function:
 
 MORE
