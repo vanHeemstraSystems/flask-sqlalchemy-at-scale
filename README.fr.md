@@ -1,4 +1,4 @@
-flask-sqlalchemy-at-scale
+flask-sqlalchemy-à-échelle
 
 # Flask SQLAlchemy à grande échelle
 
@@ -8,7 +8,7 @@ Basé sur "Flask SQLAlchemy" sur<https://github.com/vanHeemstraSystems/flask-sql
 
 Exécutez cette application comme suit :
 
-1) Entrez`flask_app`annuaire:`$ cd flask_app`2) S'il n'existe pas, créez un environnement virtuel à l'intérieur du`flask_app` directory: `python3 -m venv .venv
+1) Entrez`flask_app`annuaire:`$ cd flask_app`2) S'il n'existe pas, créez un environnement virtuel à l'intérieur du`flask_app`annuaire:`python3 -m venv .venv
 3) Start the virtual environment and enter: `. .venv/bin/activer`4) Set the Flask App to app directory:`(.venv) $ export FLASK_APP=app`5) Set the Flask Environment to development:`(.venv) $ export FLASK_ENV=développement`6) Run the flask app:`(.venv) $ exécution du flacon\`\`\`
 7) Ouvrez l'interface Web comme vous y êtes invité
 
