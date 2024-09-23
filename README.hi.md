@@ -8,7 +8,8 @@
 
 इस एप्लिकेशन को इस प्रकार चलाएँ:
 
-1) दर्ज करें`flask_app`निर्देशिका:`$ cd flask_app`2) भागो`pip install -r requirements.txt`3) यदि अस्तित्व में नहीं है, तो अंदर एक आभासी वातावरण बनाएं`flask_app`निर्देशिका:`python3 -m venv .venv
+1) दर्ज करें`flask_app` directory: `$ cd flask_app`
+2) Run `pip install -r requirements.txt`3) यदि अस्तित्व में नहीं है, तो अंदर एक आभासी वातावरण बनाएं`flask_app`निर्देशिका:`python3 -m venv .venv
 4) Start the virtual environment and enter: `. .venv/bin/सक्रिय करें`5) Set the Flask App to app directory:`(.venv) $ निर्यात FLASK_APP=ऐप`6) Set the Flask Environment to development:`(.venv) $ निर्यात FLASK_ENV=विकास`7) Run the flask app:`(.venv) $ फ्लास्क रन\`\`\`
 8) संकेतानुसार वेब इंटरफ़ेस खोलें
 
