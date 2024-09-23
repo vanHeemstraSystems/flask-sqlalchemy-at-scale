@@ -101,6 +101,8 @@ These commands will apply the modifications you make to your models and will del
 Next, run the following code to create ten random posts:
 
 ```
+>>> from app.extensions import db 
+>>> from app.models.post import Post
 >>> import random
 >>>
 >>> for i in range(0, 10):
@@ -114,6 +116,127 @@ Next, run the following code to create ten random posts:
 >>>    db.session.commit()
 ```
 
-You import the db database object, the Post database model, and the random Python module. You’ll use this module to generate random numbers to create sample posts with different titles and contents. You use a for loop with the range() Python function to repeat a code block ten times.
+You import the ```db``` database object, the ```Post``` database model, and the ```random``` Python module. You’ll use this module to generate random numbers to create sample posts with different titles and contents. You use a ```for``` loop with the ```range()``` Python function to repeat a code block ten times.
+
+In the ```for``` loop, you use the ```random.randrange()``` method to generate a random integer number between ```1``` and ```1000``` and save it to a variable called ```random_num```. You then create a post object using the ```Post``` model and use the random number in the ```random_num``` variable to generate a sample post title and content.
+
+You then add the post object to the database session, print the object itself and its content, and commit the transaction.
+
+You’ll receive an output similar to the following but with different numbers:
+
+```
+<Post "Post #923">
+Content #923
+--
+<Post "Post #245">
+Content #245
+--
+<Post "Post #124">
+Content #124
+--
+<Post "Post #282">
+Content #282
+--
+<Post "Post #130">
+Content #130
+--
+<Post "Post #650">
+Content #650
+--
+<Post "Post #763">
+Content #763
+--
+<Post "Post #282">
+Content #282
+--
+<Post "Post #423">
+Content #423
+--
+<Post "Post #899">
+Content #899
+--
+```
+
+Each post has a randomly generated number attached to it. These posts will now be in your database.
+
+Leave the Flask shell running and open a new terminal window. Source your environment and navigate to your application folder.
+
+Now that you have some sample posts in your table, you can display them on the posts’ index page. First, open the posts routes file to modify the index route:
+
+```
+(.venv) gitpod /workspace/flask-sqlalchemy-at-scale/flask_app (main) $ nano app/posts/routes.py
+```
+
+Edit the imports and the index route as follows:
+
+```
+#!/usr/bin/env python
+from flask import render_template
+from app.posts import bp
+from app.extensions import db
+from app.models.post import Post
+
+@bp.route('/')
+def index():
+    posts = Post.query.all()
+    return render_template('posts/index.html', posts=posts)
+
+@bp.route('/categories/')
+def categories():
+    return render_template('posts/categories.html')    
+```
+flask_app/app/posts/routes.py
+
+Save and close the file.
+
+You import the ```db``` database object and the ```Post``` model. You get all the posts in the database and then pass them to the posts’ index template.
+
+Open the posts’ index template for modification to display the posts you passed to it:
+
+```
+(.venv) gitpod /workspace/flask-sqlalchemy-at-scale/flask_app (main) $ nano app/templates/posts/index.html
+```
+
+Edit the file as follows:
+
+```
+{% extends 'base.html' %}
+
+{% block content %}
+    <span class="title"><h1>{% block title %} The Posts Page {% endblock %}</h1></span>
+    <div class="content">
+        <h2>This is the posts Flask blueprint</h2>
+        {% for post in posts %}
+            <div class="post">
+                <p><b>#{{ post.id }}</b></p>
+                <p class="title">
+                    <b>
+                        <a href="#">
+                            {{ post.title }}
+                        </a>
+                    </b>
+                </p>
+                <div class="content">
+                    <p>{{ post.content }}</p>
+                </div>
+                <hr>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
+```
+flask_app/app/templates/posts/index.html
+
+Save and close the file.
+
+Here, you loop through posts and display each post’s ID, title, and content.
+
+With the development server running, visit the posts’ index page or refresh it if you have it open:
+
+```
+http://127.0.0.1:5000/posts/
+```
+
+The sample posts you’ve generated will be displayed on the index page, similar to the following image:
 
 MORE
