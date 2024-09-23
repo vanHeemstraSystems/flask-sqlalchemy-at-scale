@@ -254,7 +254,7 @@ Save and close the file.
 
 Here, you extend the base template. You replace the content block, using an ```<h1>``` heading that also serves as a title and an ```<h2>``` heading to indicate the index page is part of the main Flask blueprint.
 
-With the development server running, visit the index page using your browser or refresh it if it’s already open:
+With the development server running, visit the index page using your browser or refresh it if it’s already open (**Note**: You may have to stop and start your server):
 
 ```
 http://127.0.0.1:5000/
