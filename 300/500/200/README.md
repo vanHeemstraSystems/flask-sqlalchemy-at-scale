@@ -2,7 +2,7 @@
 
 Now you’ll create the blueprint for blog posts, register it, and render its templates.
 
-At this point in the tutorial, your flask_app directory structure is as follows (excluding the virtual environment’s directory):
+At this point in the tutorial, your flask_app directory structure is as follows (including the virtual environment’s directory):
 
 ```
 .
