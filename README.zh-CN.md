@@ -6,6 +6,8 @@
 
 基于“Flask SQLAlchemy”，位于<https://github.com/vanHeemstraSystems/flask-sqlalchemy/>
 
+基于“工厂模式”<https://github.com/vanHeemstraSystems/factory-pattern>
+
 按如下方式运行该应用程序：
 
 1) 输入`flask_app`目录：`$ cd flask_app`2) 跑步`pip install -r requirements.txt`3）如果不存在，则在其中创建一个虚拟环境`flask_app`目录：`python3 -m venv .venv
@@ -22,7 +24,7 @@
 
 ## 300 - 构建我们的应用程序
 
-See [README.md](./300/README.md)
+看[README.md](./300/README.md)
 
 ## 400 - 结论
 
