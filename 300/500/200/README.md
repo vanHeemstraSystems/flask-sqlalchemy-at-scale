@@ -1,0 +1,1 @@
+# 200 - Creating the Posts Blueprint and Rendering its Templates
