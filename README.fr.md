@@ -4,13 +4,14 @@ flask-sqlalchemy-à-échelle
 
 Basé sur « Comment structurer une grande application Flask avec des plans Flask et Flask-SQLAlchemy » sur<https://www.digitalocean.com/community/tutorials/how-to-structure-a-large-flask-application-with-flask-blueprints-and-flask-sqlalchemy>
 
-Basé sur "Flask SQLAlchemy" sur<https://github.com/vanHeemstraSystems/flask-sqlalchemy/>
+Based on "Flask SQLAlchemy" at <https://github.com/vanHeemstraSystems/flask-sqlalchemy/>
 
 Exécutez cette application comme suit :
 
-1) Entrez`flask_app`annuaire:`$ cd flask_app`2) S'il n'existe pas, créez un environnement virtuel à l'intérieur du`flask_app`annuaire:`python3 -m venv .venv
-3) Start the virtual environment and enter: `. .venv/bin/activer`4) Set the Flask App to app directory:`(.venv) $ export FLASK_APP=app`5) Set the Flask Environment to development:`(.venv) $ export FLASK_ENV=développement`6) Run the flask app:`(.venv) $ exécution du flacon\`\`\`
-7) Ouvrez l'interface Web lorsque vous y êtes invité
+1) Enter `flask_app`annuaire:`$ cd flask_app`
+2) Run `pip install -r requirements.txt`3) S'il n'existe pas, créez un environnement virtuel à l'intérieur du`flask_app`annuaire:`python3 -m venv .venv
+4) Start the virtual environment and enter: `. .venv/bin/activer`5) Set the Flask App to app directory:`(.venv) $ export FLASK_APP=app`6) Set the Flask Environment to development:`(.venv) $ export FLASK_ENV=développement`7) Run the flask app:`(.venv) $ exécution du flacon\`\`\`
+8) Ouvrez l'interface Web comme vous y êtes invité
 
 ## 100 - Introduction
 
