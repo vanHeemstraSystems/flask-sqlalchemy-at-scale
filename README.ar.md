@@ -8,9 +8,10 @@
 
 قم بتشغيل هذا التطبيق على النحو التالي:
 
-1) أدخل`flask_app`دليل:`$ cd flask_app`2) في حالة عدم وجودها، قم بإنشاء بيئة افتراضية داخل`flask_app`دليل:`python3 -m venv .venv
-3) Start the virtual environment and enter: `. .venv/bin/activate`4) Set the Flask App to app directory:`(.venv) $export FLASK_APP=app`5) Set the Flask Environment to development:`(.venv) $export FLASK_ENV=development`6) Run the flask app:`(.venv) تشغيل القارورة $\`\`\`
-7) افتح واجهة الويب كما هو مطلوب
+1) أدخل`flask_app` directory: `$ cd flask_app`2) تشغيل`pip install -r requirements.txt`
+3) If non-existent, create a virtual environment inside the `flask_app`دليل:`python3 -m venv .venv
+4) Start the virtual environment and enter: `. .venv/bin/activate`5) Set the Flask App to app directory:`(.venv) $export FLASK_APP=app`6) Set the Flask Environment to development:`(.venv) $export FLASK_ENV=development`7) Run the flask app:`(.venv) تشغيل القارورة $\`\`\`
+8) افتح واجهة الويب كما هو مطلوب
 
 ## 100- مقدمة
 
@@ -18,7 +19,7 @@
 
 ## 200 - المتطلبات
 
-يرى[README.md](./200/README.md)
+See [README.md](./200/README.md)
 
 ## 300 – بناء تطبيقنا
 
