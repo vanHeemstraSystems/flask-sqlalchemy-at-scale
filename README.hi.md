@@ -11,18 +11,18 @@
 इस एप्लिकेशन को इस प्रकार चलाएँ:
 
 1) दर्ज करें`flask_app`निर्देशिका:`$ cd flask_app`2) भागो`pip install -r requirements.txt`3) यदि अस्तित्व में नहीं है, तो अंदर एक आभासी वातावरण बनाएं`flask_app`निर्देशिका:`python3 -m venv .venv
-4) Start the virtual environment and enter: `. .venv/bin/सक्रिय करें`5) Set the Flask App to app directory:`(.venv) $ निर्यात FLASK_APP=ऐप`6) Set the Flask Environment to development:`(.venv) $ निर्यात FLASK_ENV=विकास`7) Run the flask app:`(.venv) $ फ्लास्क रन`8) Open the web interface as prompted
+4) Start the virtual environment and enter: `. .venv/bin/सक्रिय करें`5) Set the Flask App to app directory:`(.venv) $ निर्यात FLASK_APP=ऐप`6) Set the Flask Environment to development:`(.venv) $ निर्यात FLASK_ENV=विकास`7) Run the flask app:`(.venv) $ flask run`8) Open the web interface as prompted
 9) Use`CTRL+c`to exit the web server.
 10) Alternatively run the flask command line interface:`(.venv) $ कुप्पी खोल`11) Execute any flask commands: >>>
 12) Use`कमांड लाइन इंटरफ़ेस से बाहर निकलने के लिए बाहर निकलें()\`\`\`।
 
 ## 100 - परिचय
 
-देखना[README.md](./100/README.md)
+See [README.md](./100/README.md)
 
 ## 200 - आवश्यकताएँ
 
-See [README.md](./200/README.md)
+देखना[README.md](./200/README.md)
 
 ## 300 - हमारे एप्लिकेशन का निर्माण
 
