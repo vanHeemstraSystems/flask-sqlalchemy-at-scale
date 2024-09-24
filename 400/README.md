@@ -6,10 +6,10 @@ The example web application now has three major components that can be expanded 
 
 The main blueprint: You can add an about page or a contact page for users to contact the application owner.
 
-The posts blueprint: You can add pages for creating, editing, deleting, and sorting posts. You can also add tags to posts using a Many-to-Many database relationship with Flask-SQLAlchemy.
+The posts blueprint: You can add pages for creating, editing, deleting, and sorting posts. You can also add tags to posts using a [Many-to-Many database relationship with Flask-SQLAlchemy](https://www.digitalocean.com/community/tutorials/how-to-use-many-to-many-database-relationships-with-flask-sqlalchemy).
 
-The questions blueprint: You can add pages for managing questions and use a One-to-Many database relationship with Flask-SQLAlchemy to create another table for answers so that a question can have multiple solutions.
+The questions blueprint: You can add pages for managing questions and use a [One-to-Many database relationship with Flask-SQLAlchemy](https://www.digitalocean.com/community/tutorials/how-to-use-one-to-many-database-relationships-with-flask-sqlalchemy) to create another table for answers so that a question can have multiple solutions.
 
 You can also add more blueprints for features such as authentication, payments, administration, and more.
 
-If you want to read more about Flask, check out the other tutorials in the How To Build Web Applications with Flask series.
+If you want to read more about Flask, check out the other tutorials in the [How To Build Web Applications with Flask](https://www.digitalocean.com/community/tutorial-series/how-to-create-web-sites-with-flask) series.
