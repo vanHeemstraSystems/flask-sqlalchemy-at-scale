@@ -185,8 +185,44 @@ The page will load with the blueprint heading, the submission form, and two samp
 
 ![image](https://github.com/user-attachments/assets/75f763ab-5c56-42b6-a7de-9caa1823cfa3)
 
+However, filling in and submitting the form will result in a **405 Method Not Allowed** HTTP error because the form sends a ```POST``` request to the questions’ index route, but the route does not accept nor handle ```POST``` requests. To resolve this issue and make the form functional, you’ll modify the index route of the questions blueprint and use the form data to add new questions to the database.
 
+Open the questions blueprint’s ```routes.py``` file:
 
+```
+(.venv) gitpod /workspace/flask-sqlalchemy-at-scale/flask_app (main) $ nano app/questions/routes.py
+```
 
+Edit the file as follows:
 
-MORE
+```python title="routes.py"
+#!/usr/bin/env python
+from flask import render_template, request, url_for, redirect
+from app.questions import bp
+from app.models.question import Question
+from app.extensions import db
+
+@bp.route('/', methods=('GET', 'POST'))
+def index():
+    questions = Question.query.all()
+
+    if request.method == 'POST':
+        new_question = Question(content=request.form['content'],
+                                answer=request.form['answer'])
+        db.session.add(new_question)
+        db.session.commit()
+        return redirect(url_for('questions.index'))
+
+    return render_template('questions/index.html', questions=questions)
+```
+flask_app/app/questions/routes.py
+
+Save and close the file.
+
+You allow the ```GET``` and ```POST``` methods by passing the (```'GET'```, ```'POST'```) tuple to the ```methods``` parameter. You handle ```POST``` requests in the ```if request.method == 'POST':``` condition. In it, you create a new question object using the content and answer the user submits, which you get from the ```request.form``` object. You add the new question to the database session, commit the transaction, and then redirect the user to the questions index page.
+
+The form will now work, and you can add new questions and answers to your database. You can test this functionality at the http://127.0.0.1:5000/questions/ URL (**Note**: You may have to restart the server).
+
+You have integrated Flask-SQLAlchemy with your application, adding a directory for models to organize your code.
+
+You can compare your final files against the code held in the [DigitalOcean community repository](https://github.com/adyouri/large-flask-app-template).
