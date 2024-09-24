@@ -1,7 +1,5 @@
 # 200 - Creating and Interacting with the Post Model
 
-  == WE ARE HERE https://www.digitalocean.com/community/tutorials/how-to-structure-a-large-flask-application-with-flask-blueprints-and-flask-sqlalchemy ==
-
 In large applications, you may have hundreds of database tables, which means you would need to write hundreds of SQLAlchemy models to manage them. Putting all your models in one file will make your application hard to maintain, so you will split your models into separate Python files inside a models directory. Each file will hold the models and functions related to a specific part of your application. For example, you may put models and functions for managing posts inside a post.py file in a directory called models in the app directory.
 
 At this point in the tutorial, your flask_app directory structure is as follows (excluding the virtual environment’s directory):
