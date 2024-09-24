@@ -10,10 +10,10 @@
 
 按如下方式運行該應用程式：
 
-1) 輸入`flask_app`目錄：`$ cd flask_app`2) 跑步`pip install -r requirements.txt`3）如果不存在，則在其中建立一個虛擬環境`flask_app`目錄：`python3 -m venv .venv
+1) 輸入`flask_app`目錄：`$ cd flask_app`2）運行`pip install -r requirements.txt`3）如果不存在，則在內部建立一個虛擬環境`flask_app`目錄：`python3 -m venv .venv
 4) Start the virtual environment and enter: `。 .venv/bin/激活`5) Set the Flask App to app directory:`(.venv) $ 導出 FLASK_APP=app`6) Set the Flask Environment to development:`(.venv) $ 導出 FLASK_ENV=開發`7) Run the flask app:`(.venv) $ 燒瓶運行`8) Open the web interface as prompted
 9) Use`CTRL+c`to exit the web server.
-10) Alternatively run the flask command line interface:`(.venv) $ 燒瓶外殼`11) Execute any flask commands: >>>
+10) Alternatively run the flask command line interface:`(.venv) $ 燒瓶殼`11) Execute any flask commands: >>>
 12) Use`exit()\`\`\` 退出命令列介面。
 
 ## 100 - 簡介
