@@ -183,7 +183,9 @@ http://127.0.0.1:5000/questions/
 
 The page will load with the blueprint heading, the submission form, and two sample questions:
 
-== IMAGE GOES HERE ==
+![image](https://github.com/user-attachments/assets/75f763ab-5c56-42b6-a7de-9caa1823cfa3)
+
+
 
 
 
