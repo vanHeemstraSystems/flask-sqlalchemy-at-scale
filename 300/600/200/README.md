@@ -11,8 +11,6 @@ At this point in the tutorial, your flask_app directory structure is as follows 
 |    ├── app
 |    |   ├── __init__.py
 |    |   ├── extensions.py
-|    |   ├── instance
-|    |   │   └── app.db
 |    |   ├── main
 |    |   │   ├── __init__.py
 |    |   │   └── routes.py
@@ -23,14 +21,16 @@ At this point in the tutorial, your flask_app directory structure is as follows 
 |    |   │   ├── __init__.py
 |    |   │   └── routes.py
 |    |   └── templates
-|    |           ├── base.html
-|    |           ├── index.html
-|    |           ├── posts
-|    |           |   ├── categories.html
-|    |           |   └── index.html
-|    |           └── questions
-|    |               └── index.html
+|    |       ├── base.html
+|    |       ├── index.html
+|    |       ├── posts
+|    |       |   ├── categories.html
+|    |       |   └── index.html
+|    |       └── questions
+|    |           └── index.html
 |    ├── config.py
+|    ├── instance
+|    |   └── app.db
 |    └── requirements.txt
 └── README.md
 ```
