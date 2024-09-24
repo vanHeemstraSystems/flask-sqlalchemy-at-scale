@@ -39,6 +39,32 @@ At this point in the tutorial, your ```flask_app``` directory structure is as fo
 └── README.md
 ```
 
+To create a questions database model, open a new file called ```question.py``` inside your models directory:
+
+```
+(.venv) gitpod /workspace/flask-sqlalchemy-at-scale/flask_app (main) $ nano app/models/question.py
+```
+
+Add the following code:
+
+```python title="question.py"
+#!/usr/bin/env python
+from app.extensions import db
+
+class Question(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    content = db.Column(db.Text)
+    answer = db.Column(db.Text)
+
+    def __repr__(self):
+        return f'<Question {self.content}>'
+```
+flask_app/app/models/question.py
+
+Save and close the file.
+
+
+
 
 
 MORE
