@@ -9,8 +9,6 @@ By the end of the tutorial, you will have built a Flask application with the fol
 |    ├── app
 |    |   ├── __init__.py
 |    |   ├── extensions.py
-|    |   ├── instance
-|    |   │   └── app.db
 |    |   ├── main
 |    |   │   ├── __init__.py
 |    |   │   └── routes.py
@@ -24,14 +22,16 @@ By the end of the tutorial, you will have built a Flask application with the fol
 |    |   │   ├── __init__.py
 |    |   │   └── routes.py
 |    |   └── templates
-|    |           ├── base.html
-|    |           ├── index.html
-|    |           ├── posts
-|    |           │   ├── categories.html
-|    |           │   └── index.html
-|    |           └── questions
-|    |               └── index.html
+|    |       ├── base.html
+|    |       ├── index.html
+|    |       ├── posts
+|    |       │   ├── categories.html
+|    |       │   └── index.html
+|    |       └── questions
+|    |           └── index.html
 |    ├── config.py
+|    ├── instance
+|    |   └── app.db
 |    └── requirements.txt
 └── README.md
 ```
