@@ -2,7 +2,7 @@
 
 # 大規模 Flask SQLAlchemy
 
-Based on "How To Structure a Large Flask Application with Flask Blueprints and Flask-SQLAlchemy" at <https://www.digitalocean.com/community/tutorials/how-to-structure-a-large-flask-application-with-flask-blueprints-and-flask-sqlalchemy>
+基於“如何使用 Flask 藍圖和 Flask-SQLAlchemy 建立大型 Flask 應用程式”，位於<https://www.digitalocean.com/community/tutorials/how-to-structure-a-large-flask-application-with-flask-blueprints-and-flask-sqlalchemy>
 
 基於“Flask SQLAlchemy”，位於<https://github.com/vanHeemstraSystems/flask-sqlalchemy/>
 
@@ -10,11 +10,10 @@ Based on "How To Structure a Large Flask Application with Flask Blueprints and F
 
 按如下方式運行該應用程式：
 
-1) 輸入`flask_app`目錄：`$ cd flask_app`2) 運行`pip install -r requirements.txt`3）如果不存在，則在其中建立一個虛擬環境`flask_app`目錄：`python3 -m venv .venv
-4) Start the virtual environment and enter: `。 .venv/bin/激活`5) Set the Flask App to app directory:`(.venv) $ 導出 FLASK_APP=app`6) Set the Flask Environment to development:`(.venv) $ 導出 FLASK_ENV=開發`7) Run the flask app:`(.venv) $ 燒瓶運行`8) Open the web interface as prompted
-9) Use`CTRL+C`to exit the web server.
-10) Alternatively run the flask command line interface:`(.venv) $ 燒瓶殼`11) Execute any flask commands: >>>
-12) Use`exit()\`\`\` 退出命令列介面。
+1) 輸入`flask_app`目錄：`$ cd flask_app`2) 運行`pip install -r requirements.txt`3）如果不存在，則在其中建立一個虛擬環境`flask_app`目錄：`python3 -m venv .venv`4）啟動虛擬環境，輸入：`. .venv/bin/activate`5）將Flask App設定到app目錄：`(.venv) $ export FLASK_APP=app`6）設定Flask環境為開發：`(.venv) $ export FLASK_ENV=development`7）運行燒瓶應用程式：`(.venv) $ flask run`8）根據提示開啟Web介面
+9) 使用`CTRL+c`退出網路伺服器。
+10) 或運行flask命令列介面：`(.venv) $ flask shell`11）執行任何flask指令：>>>
+12) 使用`exit()`退出命令列介面。
 
 ## 100 - 簡介
 
