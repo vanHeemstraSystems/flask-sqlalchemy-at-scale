@@ -69,7 +69,7 @@ from flask import Blueprint
 
 bp = Blueprint('main', __name__)
 
-==from app.main import routes==
+from app.main import routes
 ```
 flask_app/app/main/\_\_init\_\_.py
 
