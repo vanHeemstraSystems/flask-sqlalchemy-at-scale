@@ -111,7 +111,7 @@ Save and close the file.
 
 You import the ```bp``` blueprint object from the main blueprint and rename it to ```main_bp``` for readability. Then you use the ```app.register_blueprint()``` method to register this main blueprint for Flask to treat as part of the application.
 
-With the development server running, navigate to the following URL:
+With the development server running, navigate to the following URL (**Note**: You may need to restart the server):
 
 ```
 http://127.0.0.1:5000
