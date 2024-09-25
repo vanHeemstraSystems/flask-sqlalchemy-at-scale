@@ -1,10 +1,10 @@
 قارورة sqlalchemy على نطاق واسع
 
-# Flask SQLAlchemy at Scale
+# قارورة SQLAlchemy على نطاق واسع
 
-استنادًا إلى "كيفية إنشاء تطبيق قارورة كبيرة باستخدام مخططات قارورة وFlask-SQLAlchemy" في<https://www.digitalocean.com/community/tutorials/how-to-structure-a-large-flask-application-with-flask-blueprints-and-flask-sqlalchemy>
+Based on "How To Structure a Large Flask Application with Flask Blueprints and Flask-SQLAlchemy" at <https://www.digitalocean.com/community/tutorials/how-to-structure-a-large-flask-application-with-flask-blueprints-and-flask-sqlalchemy>
 
-Based on "Flask SQLAlchemy" at <https://github.com/vanHeemstraSystems/flask-sqlalchemy/>
+استنادا إلى "Flask SQLAlchemy" في<https://github.com/vanHeemstraSystems/flask-sqlalchemy/>
 
 بناءً على "نمط المصنع" في<https://github.com/vanHeemstraSystems/factory-pattern>
 
@@ -12,7 +12,7 @@ Based on "Flask SQLAlchemy" at <https://github.com/vanHeemstraSystems/flask-sqla
 
 1) أدخل`flask_app`دليل:`$ cd flask_app`2) تشغيل`pip install -r requirements.txt`3) في حالة عدم وجودها، قم بإنشاء بيئة افتراضية داخل`flask_app`دليل:`python3 -m venv .venv
 4) Start the virtual environment and enter: `. .venv/bin/activate`5) Set the Flask App to app directory:`(.venv) $export FLASK_APP=app`6) Set the Flask Environment to development:`(.venv) $export FLASK_ENV=development`7) Run the flask app:`(.venv) $ flask run`8) Open the web interface as prompted
-9) Use`CTRL+c`to exit the web server.
+9) Use`CTRL+ج`to exit the web server.
 10) Alternatively run the flask command line interface:`(.venv) قذيفة قارورة $`11) Execute any flask commands: >>>
 12) Use`Exit()\`\`\` للخروج من واجهة سطر الأوامر.
 
@@ -22,7 +22,7 @@ Based on "Flask SQLAlchemy" at <https://github.com/vanHeemstraSystems/flask-sqla
 
 ## 200 - المتطلبات
 
-See [README.md](./200/README.md)
+يرى[README.md](./200/README.md)
 
 ## 300 – بناء تطبيقنا
 
