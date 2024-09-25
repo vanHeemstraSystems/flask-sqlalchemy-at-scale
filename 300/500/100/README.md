@@ -24,7 +24,7 @@ from flask import Blueprint
 
 bp = Blueprint('main', __name__)
 ```
-flask_app/app/main/\__init\__.py
+flask_app/app/main/\_\_init\_\_.py
 
 Save and close the file.
 
