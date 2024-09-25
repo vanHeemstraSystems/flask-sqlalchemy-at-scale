@@ -69,7 +69,7 @@ from flask import Blueprint
 
 bp = Blueprint('main', __name__)
 
-from app.main import routes
+<mark>from app.main import routes</mark>
 ```
 flask_app/app/main/\_\_init\_\_.py
 
