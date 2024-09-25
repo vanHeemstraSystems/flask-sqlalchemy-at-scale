@@ -10,11 +10,10 @@
 
 按如下方式运行该应用程序：
 
-1) 输入`flask_app`目录：`$ cd flask_app`2) 运行`pip install -r requirements.txt`3）如果不存在，则在其中创建一个虚拟环境`flask_app`目录：`python3 -m venv .venv
-4) Start the virtual environment and enter: `。 .venv/bin/激活`5) Set the Flask App to app directory:`(.venv) $ 导出 FLASK_APP=app`6) Set the Flask Environment to development:`(.venv) $ 导出 FLASK_ENV=开发`7) Run the flask app:`(.venv) $ 烧瓶运行`8) Open the web interface as prompted
-9) Use`CTRL+C`to exit the web server.
-10) Alternatively run the flask command line interface:`(.venv) $ 烧瓶壳`11) Execute any flask commands: >>>
-12) Use`exit()\`\`\` 退出命令行界面。
+1) 输入`flask_app`目录：`$ cd flask_app`2) 运行`pip install -r requirements.txt`3）如果不存在，则在其中创建一个虚拟环境`flask_app`目录：`python3 -m venv .venv`4）启动虚拟环境，输入：`. .venv/bin/activate`5）将Flask App设置到app目录：`(.venv) $ export FLASK_APP=app`6）设置Flask环境为开发：`(.venv) $ export FLASK_ENV=development`7）运行烧瓶应用程序：`(.venv) $ flask run`8）根据提示打开Web界面
+9) 使用`CTRL+c`退出网络服务器。
+10) 或者运行flask命令行界面：`(.venv) $ flask shell`11）执行任何flask命令：>>>
+12) 使用`exit()`退出命令行界面。
 
 ## 100 - 简介
 
