@@ -10,8 +10,7 @@ Basé sur le « modèle d'usine » à<https://github.com/vanHeemstraSystems/fa
 
 Exécutez cette application comme suit :
 
-1) Entrez`flask_app`annuaire:`$ cd flask_app`2) Courir`pip install -r requirements.txt`
-3) If non-existent, create a virtual environment inside the `flask_app`annuaire:`python3 -m venv .venv
+1) Entrez`flask_app`annuaire:`$ cd flask_app`2) Courir`pip install -r requirements.txt`3) S'il n'existe pas, créez un environnement virtuel à l'intérieur du`flask_app`annuaire:`python3 -m venv .venv
 4) Start the virtual environment and enter: `. .venv/bin/activer`5) Set the Flask App to app directory:`(.venv) $ export FLASK_APP=app`6) Set the Flask Environment to development:`(.venv) $ export FLASK_ENV=développement`7) Run the flask app:`(.venv) $ exécution du flacon`8) Open the web interface as prompted
 9) Use`CTRL+c`to exit the web server.
 10) Alternatively run the flask command line interface:`(.venv) $ coquille de flacon`11) Execute any flask commands: >>>
