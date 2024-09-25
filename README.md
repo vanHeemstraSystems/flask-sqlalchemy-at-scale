@@ -11,7 +11,7 @@ Run this application as follows:
 
 1) Enter ```flask_app``` directory: ```$ cd flask_app```
 2) Run ```pip install -r requirements.txt```
-3) If non-existent, create a virtual environment inside the ```flask_app``` directory: ```python3 -m venv .venv
+3) If non-existent, create a virtual environment inside the ```flask_app``` directory: ```python3 -m venv .venv```
 4) Start the virtual environment and enter: ```. .venv/bin/activate```
 5) Set the Flask App to app directory: ```(.venv) $ export FLASK_APP=app```
 6) Set the Flask Environment to development: ```(.venv) $ export FLASK_ENV=development```
