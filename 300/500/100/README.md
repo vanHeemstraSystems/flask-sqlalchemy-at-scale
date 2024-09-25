@@ -62,14 +62,14 @@ For Flask to use these routes and to make them importable directly from the blue
 (.venv) gitpod /workspace/flask-sqlalchemy-at-scale/flask_app (main) $ nano app/main/__init__.py
 ```
 
-Add the highlighted import line at the end of the file:
+Add the import line at the end of the file:
 
 ```python title="__init__.py"
 from flask import Blueprint
 
 bp = Blueprint('main', __name__)
 
-<mark>from app.main import routes</mark>
+from app.main import routes
 ```
 flask_app/app/main/\_\_init\_\_.py
 
