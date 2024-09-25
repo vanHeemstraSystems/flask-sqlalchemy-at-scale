@@ -105,7 +105,7 @@ def create_app(config_class=Config):
 
     return app
 ```
-flask_app/app/__init__.py
+flask_app/app/\_\_init\_\_.py
 
 Save and close the file.
 
