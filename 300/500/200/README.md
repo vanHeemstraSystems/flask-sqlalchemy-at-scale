@@ -47,7 +47,7 @@ bp = Blueprint('posts', __name__)
 
 from app.posts import routes
 ```
-flask_app/app/posts/__init__.py
+flask_app/app/posts/\_\_init\_\_.py
 
 Save and close the file.
 
