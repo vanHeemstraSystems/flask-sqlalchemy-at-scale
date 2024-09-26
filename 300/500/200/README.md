@@ -108,6 +108,7 @@ Add the following code to the newly created file:
     </div>
 {% endblock %}
 ```
+flask_app/app/templates/posts/index.html
 
 Save and close the file.
 
