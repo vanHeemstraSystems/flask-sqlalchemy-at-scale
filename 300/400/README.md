@@ -56,7 +56,7 @@ def create-app(config_class=Config):
 
     return app
 ```
-app/__init__.py
+app/\_\_init\_\_.py
 
 Save and close the file.
 
