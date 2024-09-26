@@ -1,4 +1,4 @@
-flask-sqlalchemy-at-scale
+規模燒瓶 sqlalchemy
 
 # 大規模 Flask SQLAlchemy
 
@@ -10,10 +10,8 @@ flask-sqlalchemy-at-scale
 
 按如下方式運行該應用程式：
 
-1) 輸入`flask_app`目錄：`$ cd flask_app`
-2) Run `pip install -r requirements.txt`3）如果不存在，則在內部建立一個虛擬環境`flask_app`目錄：`python3 -m venv .venv`4）啟動虛擬環境，輸入：`. .venv/bin/activate`5）將Flask App設定到app目錄：`(.venv) $ export FLASK_APP=app`6）將Flask環境設定為開發：`(.venv) $ export FLASK_ENV=development`7）運行燒瓶應用程式：`(.venv) $ flask run`
-8) Open the web interface as prompted
-9) Use `CTRL+c`退出網路伺服器。
+1) 輸入`flask_app`目錄：`$ cd flask_app`2) 跑步`pip install -r requirements.txt`3）如果不存在，則在內部建立一個虛擬環境`flask_app`目錄：`python3 -m venv .venv`4）啟動虛擬環境，輸入：`. .venv/bin/activate`5）將Flask App設定到app目錄：`(.venv) $ export FLASK_APP=app`6）將Flask環境設定為開發：`(.venv) $ export FLASK_ENV=development`7）運行燒瓶應用程式：`(.venv) $ flask run`8）根據提示開啟Web介面
+9) 使用`CTRL+c`退出網路伺服器。
 10) 或運行flask命令列介面：`(.venv) $ flask shell`11）執行任何flask指令：>>>
 12) 使用`exit()`退出命令列介面。
 
