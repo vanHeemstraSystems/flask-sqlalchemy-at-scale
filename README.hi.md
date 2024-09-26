@@ -1,4 +1,4 @@
-फ्लास्क-एसक्यूएलकेमी-एट-स्केल
+flask-sqlalchemy-at-scale
 
 # स्केल पर फ्लास्क SQLAlchemy
 
